@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #36393f;
+    color: #dcddde;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 350px;
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #8e9297;
+}
+
+.memberList {
+    max-height: 526px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.memberList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.memberList::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.memberList::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.memberList:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.memberList:hover::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    background-color: #2f3136;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.member img {
+    margin-right: 10px;
+    height: 53px;
+    width: auto;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.member-details {
+    font-size: 14px;
+}
+
+.member-join-date,
+.member-steam-profile {
+    margin-top: 5px;
+}
+
+.member-steam-profile a {
+    color: #7289da;
+}
+
+button {
+    margin-left: 10px;
+    background-color: #7289da;
+    color: #dcddde;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5865f2;
+}
+
+#memberForm {
+    margin-bottom: 20px;
+}
+
+#memberForm input,
+#memberForm select {
+    margin-right: 10px;
+}
+
+.edit,
+.delete {
+    margin-left: auto;
+}
+
+.delete {
+    margin-left: 10px;
+}

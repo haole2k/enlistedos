@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ENLISTEDOS - Sistema de Patentes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.svg" alt="Logo RANKOS">
+    </div>
+    <h1>Gerenciamento de Membros</h1>
+    <form id="memberForm">
+        <input type="text" id="name" placeholder="Nome do Membro">
+        <input type="text" id="joinDate" placeholder="Data de Membro (DD/MM/AAAA)">
+        <input type="text" id="steamProfile" placeholder="Link do Perfil Steam">
+        <select id="rank">
+            <option value="Private">Soldado</option>
+            <option value="Private First Class">Soldado de Primeira Classe</option>
+            <option value="Lance Corporal">Cabo</option>
+            <option value="Corporal">Cabo-Chefe</option>
+            <option value="Sergeant">Sargento</option>
+            <option value="Staff Sergeant">Sargento-Ajudante</option>
+            <option value="Gunnery Sergeant">Subtenente</option>
+            <option value="Master Sergeant">Subtenente-Mor</option>
+            <option value="First Sergeant">Primeiro Sargento</option>
+            <option value="Master Gunnery Sergeant">Primeiro Sargento-Mor</option>
+            <option value="Sergeant Major">Segundo Tenente</option>
+            <option value="Sergeant Major of the Marine Corps">Sargento Major do Corpo de Fuzileiros Navais</option>
+        </select>
+        <button type="submit">Adicionar Membro</button>
+    </form>
+    <div id="memberList" class="memberList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
